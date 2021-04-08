@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Globalization;
-using System.Linq;
 using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
@@ -16,7 +11,7 @@ namespace SchoolDiary3.Controllers
 {
     public class BaseController : Controller
     {
-        private readonly ILogger<BaseController> _logger;
+        private readonly ILogger<BaseController>      _logger;
         private readonly UserManager<ApplicationUser> _userManager;
 
         public BaseController() { }
@@ -29,10 +24,10 @@ namespace SchoolDiary3.Controllers
 
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            // Debug.Assert(_userManager != null, "_userManager != null");
+            Debug.Assert(_userManager != null, "_userManager != null");
             var applicationUser = _userManager.GetUserAsync(User).Result;
             var userLocale = applicationUser.Locale;
-            
+
             if (context.RouteData.Values.ContainsKey("culture")) {
                 userLocale = context.RouteData.Values["culture"]?.ToString();
             }
@@ -42,7 +37,7 @@ namespace SchoolDiary3.Controllers
             var currentThread = Thread.CurrentThread;
             currentThread.CurrentCulture = userLocaleObject;
             currentThread.CurrentUICulture = userLocaleObject;
-            
+
             base.OnActionExecuting(context);
         }
     }
