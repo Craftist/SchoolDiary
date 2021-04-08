@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolDiary3", "SchoolDiary3\SchoolDiary3.csproj", "{CCC57C3A-3AE4-4B5D-99E4-F9C8818098CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCC57C3A-3AE4-4B5D-99E4-F9C8818098CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCC57C3A-3AE4-4B5D-99E4-F9C8818098CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCC57C3A-3AE4-4B5D-99E4-F9C8818098CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCC57C3A-3AE4-4B5D-99E4-F9C8818098CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
