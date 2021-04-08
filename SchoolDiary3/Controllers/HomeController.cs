@@ -6,11 +6,13 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using SchoolDiary3.Controllers.ActionFilters;
 using SchoolDiary3.Models;
 
 namespace SchoolDiary3.Controllers
 {
-    public class HomeController : BaseController
+    [LocaleActionFilter]
+    public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
 
@@ -22,6 +24,7 @@ namespace SchoolDiary3.Controllers
         public IActionResult Index()
         {
             ViewData["Culture"] = Thread.CurrentThread.CurrentUICulture.Name;
+            ViewData["ThreadID"] = Thread.CurrentThread.ManagedThreadId.ToString();
             return View();
         }
 

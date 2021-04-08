@@ -1,9 +1,11 @@
-﻿@{
+﻿@using System.Threading
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <p>Current UI Culure: @ViewData["Culture"]</p>
+    <p>Current UI Culture: @ViewData["Culture"], thread's UI culture: @(Thread.CurrentThread.CurrentUICulture.Name)</p>
+    <p>Current UI thread's managed ID: @(Thread.CurrentThread.ManagedThreadId), controller's thread's managed ID: @(ViewData["ThreadID"])</p>
 </div>

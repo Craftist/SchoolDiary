@@ -1,31 +1,21 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Threading;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
 using SchoolDiary3.Models;
 
-namespace SchoolDiary3.Controllers
+namespace SchoolDiary3.Controllers.ActionFilters
 {
-    public class BaseController : Controller
+    public class LocaleActionFilter : ActionFilterAttribute
     {
-        private readonly ILogger<BaseController>      _logger;
-        private readonly UserManager<ApplicationUser> _userManager;
-
-        public BaseController() { }
-
-        public BaseController(ILogger<BaseController> logger, UserManager<ApplicationUser> userManager)
-        {
-            _logger = logger;
-            _userManager = userManager;
-        }
-
         public override void OnActionExecuting(ActionExecutingContext context)
         {
-            Debug.Assert(_userManager != null, "_userManager != null");
-            var applicationUser = _userManager.GetUserAsync(User).Result;
+            var _userManager = context.HttpContext.RequestServices.GetService(typeof(UserManager<ApplicationUser>)) as UserManager<ApplicationUser>;
+            
+            var applicationUser = _userManager.GetUserAsync(context.HttpContext.User).Result;
             var userLocale = applicationUser.Locale;
 
             if (context.RouteData.Values.ContainsKey("culture")) {
