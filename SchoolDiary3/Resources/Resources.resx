@@ -27,4 +27,7 @@
     <data name="AppName" xml:space="preserve">
         <value>SchoolDiary</value>
     </data>
+    <data name="Welcome" xml:space="preserve">
+        <value>Welcome</value>
+    </data>
 </root>

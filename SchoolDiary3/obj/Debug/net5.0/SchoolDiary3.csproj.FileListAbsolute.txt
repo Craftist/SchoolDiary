@@ -73,10 +73,10 @@ C:\Users\Savochek\RiderProjects\SchoolDiary3\SchoolDiary3\obj\Debug\net5.0\Schoo
 C:\Users\Savochek\RiderProjects\SchoolDiary3\SchoolDiary3\obj\Debug\net5.0\ref\SchoolDiary3.dll
 C:\Users\Savochek\RiderProjects\SchoolDiary3\SchoolDiary3\obj\Debug\net5.0\SchoolDiary3.pdb
 C:\Users\Savochek\RiderProjects\SchoolDiary3\SchoolDiary3\obj\Debug\net5.0\SchoolDiary3.genruntimeconfig.cache
-C:\Users\Savochek\RiderProjects\SchoolDiary3\SchoolDiary3\obj\Debug\net5.0\SchoolDiary3.Resources.Resources.resources
-C:\Users\Savochek\RiderProjects\SchoolDiary3\SchoolDiary3\obj\Debug\net5.0\SchoolDiary3.Resources.Resources.ru.resources
 C:\Users\Savochek\RiderProjects\SchoolDiary3\SchoolDiary3\obj\Debug\net5.0\SchoolDiary3.csproj.GenerateResource.cache
 C:\Users\Savochek\RiderProjects\SchoolDiary3\SchoolDiary3\obj\Debug\net5.0\ru\SchoolDiary3.resources.cs
 C:\Users\Savochek\RiderProjects\SchoolDiary3\SchoolDiary3\obj\Debug\net5.0\ru\SchoolDiary3.resources.dll
 C:\Users\Savochek\RiderProjects\SchoolDiary3\SchoolDiary3\bin\Debug\net5.0\Web.config
 C:\Users\Savochek\RiderProjects\SchoolDiary3\SchoolDiary3\bin\Debug\net5.0\ru\SchoolDiary3.resources.dll
+C:\Users\Savochek\RiderProjects\SchoolDiary3\SchoolDiary3\obj\Debug\net5.0\SchoolDiary3.Resources.Resources.resources
+C:\Users\Savochek\RiderProjects\SchoolDiary3\SchoolDiary3\obj\Debug\net5.0\SchoolDiary3.Resources.Resources.ru.resources

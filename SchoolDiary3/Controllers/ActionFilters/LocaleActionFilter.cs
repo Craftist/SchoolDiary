@@ -18,8 +18,8 @@ namespace SchoolDiary3.Controllers.ActionFilters
             var applicationUser = _userManager.GetUserAsync(context.HttpContext.User).Result;
             var userLocale = applicationUser.Locale;
 
-            if (context.RouteData.Values.ContainsKey("culture")) {
-                userLocale = context.RouteData.Values["culture"]?.ToString();
+            if (context.ActionArguments.ContainsKey("locale")) {
+                userLocale = context.ActionArguments["locale"]?.ToString();
             }
 
             var userLocaleObject = CultureInfo.GetCultureInfo(userLocale);

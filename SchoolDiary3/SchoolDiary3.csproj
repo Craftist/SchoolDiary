@@ -37,12 +37,12 @@
       <Compile Update="Resources\Resources.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
-        <DependentUpon>Resources.resx</DependentUpon>
+        <DependentUpon>Index.resx</DependentUpon>
       </Compile>
       <Compile Update="Resources\Resources.ru.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
-        <DependentUpon>Resources.ru.resx</DependentUpon>
+        <DependentUpon>Index.ru.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 

@@ -23,8 +23,8 @@ namespace SchoolDiary3.Controllers
 
         public IActionResult Index()
         {
-            ViewData["Culture"] = Thread.CurrentThread.CurrentUICulture.Name;
-            ViewData["ThreadID"] = Thread.CurrentThread.ManagedThreadId.ToString();
+            TempData["Culture"] = Thread.CurrentThread.CurrentUICulture.Name;
+            TempData["ThreadID"] = Thread.CurrentThread.ManagedThreadId.ToString();
             return View();
         }
 

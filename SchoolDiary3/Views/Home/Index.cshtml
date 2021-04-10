@@ -1,11 +1,16 @@
 ﻿@using System.Threading
+@using System.Globalization
+@using SchoolDiary3.Resources
+
 @{
     ViewData["Title"] = "Home Page";
+    CultureInfo.CurrentCulture = CultureInfo.CurrentUICulture = new CultureInfo("ru");
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">@Resources.Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <p>Current UI Culture: @ViewData["Culture"], thread's UI culture: @(Thread.CurrentThread.CurrentUICulture.Name)</p>
-    <p>Current UI thread's managed ID: @(Thread.CurrentThread.ManagedThreadId), controller's thread's managed ID: @(ViewData["ThreadID"])</p>
+    <p>Current UI Culture: @TempData["Culture"], thread's UI culture: @(Thread.CurrentThread.CurrentUICulture.Name)</p>
+    <p>Current UI thread's managed ID: @(Thread.CurrentThread.ManagedThreadId), controller's thread's managed ID: @(TempData["ThreadID"])</p>
+    <p>Action arguments keys: @(string.Join(", ", Context.Request.QueryString))</p>
 </div>

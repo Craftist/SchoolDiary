@@ -86,5 +86,14 @@ namespace SchoolDiary3.Resources {
                 return ResourceManager.GetString("PrivacyAction", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Добро пожаловать.
+        /// </summary>
+        public static string Welcome {
+            get {
+                return ResourceManager.GetString("Welcome", resourceCulture);
+            }
+        }
     }
 }

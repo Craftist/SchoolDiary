@@ -27,4 +27,7 @@
     <data name="AppName" xml:space="preserve">
         <value>Дневничок</value>
     </data>
+    <data name="Welcome" xml:space="preserve">
+        <value>Добро пожаловать</value>
+    </data>
 </root>

@@ -9,6 +9,7 @@
 
 using System;
 using System.Reflection;
+using Microsoft.Extensions.Localization;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-SchoolDiary3-7D17A7B4-4394-4995-83FC-D8A7B1AE7537")]
